@@ -2,6 +2,8 @@
 .vscode
 src/jpl_rosa.egg-info
 build/
+install/
+log/
 dist/
 __pycache__/
 docs
