@@ -55,7 +55,7 @@ class TurtleAgent(ROSA):
         self.__blacklist = ["master", "docker"]
         self.__prompts = get_prompts()
         
-        #self.__llm = get_llm(streaming=streaming)
+        self.__llm = get_llm(streaming=streaming)
 
         #$ ollama show llama2
         #  Model
@@ -86,7 +86,7 @@ class TurtleAgent(ROSA):
         #    context length      131072    
         #    embedding length    3072      
         #    quantization        Q4_K_M             
-        self.__llm = ChatOllama( model="llama3.2", streaming=streaming, temperature=0, num_ctx=131072 )
+        #self.__llm = ChatOllama( model="llama3.2", streaming=streaming, temperature=0, num_ctx=131072 )
         # ... partially working ... 
         #     - advance turtle works
         #     - drawing star makes turtle spin endlessly
